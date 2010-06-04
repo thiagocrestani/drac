@@ -17,6 +17,7 @@ import android.hardware.SensorManager;
 import android.hardware.Sensor;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemClock;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -28,12 +29,10 @@ public class Accel extends Activity implements SensorEventListener
 {
     public void onCreate(Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-	TextView text = (TextView) findViewById(R.id.text);
-	text.setText("fuck");
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.main);
     }
-
+    
     public void onStart()
     {
 	super.onStart();
@@ -45,25 +44,36 @@ public class Accel extends Activity implements SensorEventListener
 							    new Handler());
 
 	TextView text = (TextView) findViewById(R.id.text);
-	if(accelSupported)
-	    text.setText("true");
-	else
-	    text.setText("false");
+
+	try
+	    {
+		xout = new BufferedWriter(new FileWriter(new File(android.os.Environment.getExternalStorageDirectory(), "x.dat")));
+		yout = new BufferedWriter(new FileWriter(new File(android.os.Environment.getExternalStorageDirectory(), "y.dat")));
+		zout = new BufferedWriter(new FileWriter(new File(android.os.Environment.getExternalStorageDirectory(), "z.dat")));	
+	    }
+	catch(IOException ex)
+	    {
+	    }
     }
 
     public void onSensorChanged(android.hardware.SensorEvent sensorEvent)
     {	
-	FileOutputStream file = null;
 	TextView text = (TextView) findViewById(R.id.text);
-	text.setText("test");
+
 	try
 	    {
-		file = openFileOutput("data", Context.MODE_WORLD_READABLE);
-		 for(int i = 0; i < sensorEvent.values.length; ++i)
-		     {
-			 file.write("Test".getBytes());
-		     }
-		file.close();
+		String time = Long.toString(SystemClock.currentThreadTimeMillis());
+		String s = "";
+		s = "t: " + time + 
+		    " x: " + Float.toString(sensorEvent.values[0]) + 
+		    " y: " + Float.toString(sensorEvent.values[1]) + 
+		    " z: " + Float.toString(sensorEvent.values[2]);
+
+		xout.write(time + " " + Float.toString(sensorEvent.values[0]) + "\n");
+		yout.write(time + " " + Float.toString(sensorEvent.values[1]) + "\n");
+		zout.write(time + " " + Float.toString(sensorEvent.values[2]) + "\n");
+			
+		text.setText(s);
 	    }
 	catch(IOException ex)
 	    {
@@ -73,6 +83,23 @@ public class Accel extends Activity implements SensorEventListener
     public void onAccuracyChanged(android.hardware.Sensor sensorEvent, int stuff)
     {
     }
+    
+    public void onStop()
+    {
+	super.onStop();
+	try
+	    {
+		xout.close();
+		yout.close();
+		zout.close();
+	    }
+	catch(IOException ex)
+	    {
+	    }
+    }
 
     private SensorManager sensorMgr;
+    private BufferedWriter xout;
+    private BufferedWriter yout;
+    private BufferedWriter zout;
 }

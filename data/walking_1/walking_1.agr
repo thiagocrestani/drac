@@ -1,0 +1,675 @@
+# Grace project file
+#
+@version 50122
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Fri Jun  4 18:14:22 2010"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 52000, -4, 56000, 20
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.150000, 0.850000
+@    title "Accelerometer Data under Brief Walking"
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 1000
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "Acceleration (m/s)"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 5
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.85, 0.8
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 1
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 1.5
+@    s0 line color 1
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 1
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment "/home/devin/Desktop/drac/data/walking_1/x.dat"
+@    s0 legend  "x"
+@    s1 hidden false
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol color 2
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 0
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 0
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 2
+@    s1 line linewidth 1.5
+@    s1 line color 2
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 1
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 0
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 2
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment "/home/devin/Desktop/drac/data/walking_1/y.dat"
+@    s1 legend  "y"
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol color 3
+@    s2 symbol pattern 1
+@    s2 symbol fill color 3
+@    s2 symbol fill pattern 0
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 0
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 4
+@    s2 line linewidth 1.5
+@    s2 line color 3
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 1
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 0
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 3
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment "/home/devin/Desktop/drac/data/walking_1/z.dat"
+@    s2 legend  "z"
+@target G0.S0
+@type xy
+52962 10.501288
+52977 7.205164
+53015 4.399372
+53051 6.0882955
+53085 9.112013
+53117 14.09706
+53196 6.3198414
+53205 5.6660647
+53236 6.701211
+53270 6.742072
+53305 9.888372
+53339 11.114203
+53429 9.765789
+53437 8.19945
+53468 5.6660647
+53504 6.932757
+53538 7.8861814
+53579 -0.7218784
+53598 -1.4573772
+53679 -0.46309182
+53688 -0.42223078
+53705 0.19068487
+53738 -0.84446156
+53774 -0.84446156
+53790 -0.7218784
+53846 -0.61291564
+53855 -1.0760075
+53887 -1.2258313
+53902 -1.1441092
+53932 -1.0760075
+53949 -1.2258313
+53982 -1.1441092
+54054 -1.0760075
+54063 -1.1849703
+54084 -1.2258313
+54118 -1.334794
+54131 -1.3756552
+54155 -1.1849703
+54204 -1.334794
+54215 -1.2666923
+54228 -1.2666923
+54244 -1.2666923
+54262 -1.1441092
+54282 -1.0760075
+54295 -1.2258313
+54344 -0.84446156
+54354 -1.1441092
+54365 -1.3075534
+54381 -1.0351465
+54401 -1.0351465
+54433 -1.2666923
+54525 -1.0760075
+54534 -1.1441092
+54565 -0.7627395
+54599 -0.84446156
+54635 -0.3405087
+54670 -0.46309182
+54704 -0.7218784
+54796 -0.7218784
+54804 -0.50395286
+54836 -0.6946377
+54871 -0.7218784
+54905 -0.6537767
+54941 -0.6946377
+55034 -0.8036005
+55042 -0.6537767
+55073 -0.6537767
+55107 -0.7627395
+55141 -0.6946377
+55175 -0.5720546
+55210 -0.53119355
+55283 -0.5720546
+55293 -0.5720546
+55324 -0.53119355
+55360 -0.61291564
+55395 -0.6946377
+55430 -0.6537767
+55505 -0.6946377
+55515 -0.8036005
+55546 -0.8036005
+55582 -0.8036005
+55616 -0.7218784
+55653 -0.84446156
+55691 -0.7218784
+55749 -0.6537767
+55758 -0.7627395
+55767 -0.7218784
+55779 -0.6946377
+55788 -0.61291564
+55801 -0.7218784
+55851 -0.5720546
+&
+@target G0.S1
+@type xy
+52962 8.430995
+52977 1.7978859
+53015 3.336985
+53051 4.372132
+53085 7.3958488
+53117 5.09401
+53196 4.6036777
+53205 8.117727
+53236 6.8237944
+53270 6.5513873
+53305 10.651112
+53339 5.47538
+53429 10.18802
+53437 2.0294318
+53468 2.4108016
+53504 2.7240696
+53538 9.425281
+53579 0.5720546
+53598 0.88532263
+53679 0.10896278
+53688 1.3756552
+53705 1.5390993
+53738 1.4573772
+53774 1.2666923
+53790 1.3075534
+53846 1.3075534
+53855 1.334794
+53887 1.3756552
+53902 1.4573772
+53932 1.5390993
+53949 1.607201
+53982 1.56634
+54054 1.56634
+54063 1.4573772
+54084 1.4573772
+54118 1.607201
+54131 1.56634
+54155 1.4573772
+54204 1.7297841
+54215 1.607201
+54228 1.7570249
+54244 1.6480621
+54262 1.4165162
+54282 1.6889231
+54295 1.6889231
+54344 1.607201
+54354 1.9477097
+54365 1.7570249
+54381 1.8387469
+54401 1.7297841
+54433 1.7297841
+54525 2.070293
+54534 1.5390993
+54565 1.6480621
+54599 1.1849703
+54635 1.4982382
+54670 1.0351465
+54704 0.88532263
+54796 1.1849703
+54804 0.95342433
+54836 0.84446156
+54871 1.1849703
+54905 0.95342433
+54941 0.9942854
+55034 1.1849703
+55042 1.1441092
+55073 1.0760075
+55107 1.1849703
+55141 1.0760075
+55175 1.2666923
+55210 0.95342433
+55283 1.0351465
+55293 0.9942854
+55324 0.9942854
+55360 1.0351465
+55395 1.0351465
+55430 0.95342433
+55505 1.0351465
+55515 0.95342433
+55546 0.84446156
+55582 0.95342433
+55616 0.7627395
+55653 0.88532263
+55691 0.8036005
+55749 0.8036005
+55758 0.7218784
+55767 0.8036005
+55779 0.95342433
+55788 0.8036005
+55801 0.84446156
+55851 0.84446156
+&
+@target G0.S2
+@type xy
+52962 -1.1441092
+52977 -0.38136974
+53015 -0.040861044
+53051 5.407278
+53085 9.847511
+53117 -3.0237172
+53196 -2.7240696
+53205 -1.9885708
+53236 0.27240697
+53270 -0.040861044
+53305 3.718355
+53339 -0.040861044
+53429 -3.486809
+53437 0.92618364
+53468 -0.53119355
+53504 3.9499009
+53538 10.61025
+53579 9.956474
+53598 10.56939
+53679 9.534244
+53688 8.240311
+53705 10.419566
+53738 9.507003
+53774 10.337844
+53790 9.956474
+53846 9.915613
+53855 9.724928
+53887 9.997335
+53902 10.119919
+53932 9.956474
+53949 10.079058
+53982 10.038197
+54054 10.038197
+54063 10.079058
+54084 10.038197
+54118 10.119919
+54131 10.119919
+54155 10.038197
+54204 10.18802
+54215 9.997335
+54228 9.80665
+54244 9.956474
+54262 10.228881
+54282 9.915613
+54295 9.847511
+54344 10.079058
+54354 10.079058
+54365 10.147159
+54381 10.119919
+54401 9.956474
+54433 9.956474
+54525 9.956474
+54534 10.378705
+54565 10.038197
+54599 10.310603
+54635 9.425281
+54670 9.888372
+54704 10.18802
+54796 9.997335
+54804 9.915613
+54836 10.147159
+54871 9.997335
+54905 10.119919
+54941 9.956474
+55034 10.119919
+55042 10.147159
+55073 10.18802
+55107 10.119919
+55141 10.18802
+55175 9.656827
+55210 10.419566
+55283 10.119919
+55293 9.956474
+55324 10.079058
+55360 10.147159
+55395 10.038197
+55430 10.038197
+55505 10.119919
+55515 10.228881
+55546 10.147159
+55582 10.038197
+55616 10.18802
+55653 10.18802
+55691 10.337844
+55749 10.419566
+55758 10.119919
+55767 10.119919
+55779 10.079058
+55788 10.038197
+55801 10.119919
+55851 10.079058
+&

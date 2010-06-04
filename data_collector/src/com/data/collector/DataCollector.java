@@ -24,59 +24,15 @@ import android.widget.TextView;
 import android.content.*;
 import java.io.*;
 
-public class DataCollector extends Activity implements SensorEventListener
+public class DataCollector extends Activity
 {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-	TextView text = (TextView) findViewById(R.id.text);
-	text.setText("hi");
+	Intent i = new Intent();
+	i.setClassName("com.data.collector", "com.data.collector.Accel");
+	startActivity(i);
     }
-
-    public void onStart()
-    {
-	super.onStart();
-	this.sensorMgr = (SensorManager)getSystemService(SENSOR_SERVICE);
-
-	boolean accelSupported = sensorMgr.registerListener(this,
-							    this.sensorMgr.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
-							    SensorManager.SENSOR_DELAY_UI,
-							    new Handler());
-
-	TextView text = (TextView) findViewById(R.id.text);
-	if(accelSupported)
-	    text.setText("true");
-	else
-	    text.setText("false");
-    }
-
-    public void onSensorChanged(android.hardware.SensorEvent sensorEvent)
-    {	
-	FileOutputStream file = null;
-	TextView text = (TextView) findViewById(R.id.text);
-
-	try
-	    {
-		file = openFileOutput("data", Context.MODE_WORLD_READABLE);
-		String s = "";
-		for(int i = 0; i < sensorEvent.values.length; ++i)
-		    {
-			s += " " + Float.toString(sensorEvent.values[i]);
-			file.write("Test".getBytes());
-		    }
-		text.setText(s);
-		file.close();
-	    }
-	catch(IOException ex)
-	    {
-	    }
-    }
-    
-    public void onAccuracyChanged(android.hardware.Sensor sensorEvent, int stuff)
-    {
-    }
-
-    private SensorManager sensorMgr;
 }
