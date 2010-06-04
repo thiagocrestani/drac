@@ -1,0 +1,21 @@
+syntax: glob
+
+Makefile
+*~*
+#*
+*.tar.gz
+*.o
+fsz
+configure
+autom4te.cache/*
+*Po
+aclocal*
+*.log
+*.status
+install-sh
+missing
+depcomp
+Makefile.in
+*.class
+*.apk
+*.ap_
