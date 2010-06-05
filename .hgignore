@@ -19,3 +19,6 @@ Makefile.in
 *.class
 *.apk
 *.ap_
+paper.dvi
+paper.aux
+paper.log
