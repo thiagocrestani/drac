@@ -11,6 +11,12 @@
 	    android:singleLine="true"
 	    android:text="Time in Seconds"/>
 
+  <EditText android:id="@+id/timeoutText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:singleLine="true"
+	    android:text="Timeout in Seconds"/>
+
   <EditText android:id="@+id/runId"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content"

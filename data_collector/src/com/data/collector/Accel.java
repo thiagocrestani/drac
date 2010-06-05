@@ -17,7 +17,7 @@ import android.hardware.SensorManager;
 import android.hardware.Sensor;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.SystemClock;
+import android.os.Vibrator;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -38,7 +38,20 @@ public class Accel extends Activity implements SensorEventListener
     {
 	super.onStart();
 
+	// sleep for the specified timeout
+	try
+	    {
+		Thread.sleep(Accel.timeout * 1000);
+	    }
+	catch(InterruptedException ex)
+	    {
+	    }
 
+	// set the start time
+	Accel.startTime = System.currentTimeMillis();
+
+	// setup the sensor manager and register this as a listener to
+	// the accelerometer
 	this.sensorMgr = (SensorManager)getSystemService(SENSOR_SERVICE);
 
 	boolean accelSupported = sensorMgr.registerListener(this,
@@ -53,6 +66,7 @@ public class Accel extends Activity implements SensorEventListener
 		xout = new BufferedWriter(new FileWriter(new File(android.os.Environment.getExternalStorageDirectory(), "x_" + Accel.runId + ".dat")));
 		yout = new BufferedWriter(new FileWriter(new File(android.os.Environment.getExternalStorageDirectory(), "y_" + Accel.runId + ".dat")));
 		zout = new BufferedWriter(new FileWriter(new File(android.os.Environment.getExternalStorageDirectory(), "z_" + Accel.runId + ".dat")));	
+		avout = new BufferedWriter(new FileWriter(new File(android.os.Environment.getExternalStorageDirectory(), "av_" + Accel.runId + ".dat")));     
 	    }
 	catch(IOException ex)
 	    {
@@ -65,21 +79,44 @@ public class Accel extends Activity implements SensorEventListener
 
 	try
 	    {
-		long time = SystemClock.currentThreadTimeMillis() - Accel.startTime;
+		long time = System.currentTimeMillis() - Accel.startTime;
+
+		// we're done
 		if(time > Accel.intervalInSeconds*1000)
 		    {
+			try
+			    {
+				xout.close();
+				yout.close();
+				zout.close();
+				avout.close();
+			    }
+			catch(IOException ex)
+			    {
+			    }
+
+			sensorMgr.unregisterListener(this);
+
+			Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE); 
+			v.vibrate(3000);
+
+			this.finish();
 			return;
 		    }
 
+		float av = (sensorEvent.values[0] + sensorEvent.values[1] + sensorEvent.values[2])/(float)3;
+
 		String s = "";
-		   s = "t: " + Long.toString(time) + 
+		s = "t: " + Long.toString(time) + 
 		    " x: " + Float.toString(sensorEvent.values[0]) + 
 		    " y: " + Float.toString(sensorEvent.values[1]) + 
-		    " z: " + Float.toString(sensorEvent.values[2]);
-
+		    " z: " + Float.toString(sensorEvent.values[2]) +
+		    " av: " + Float.toString(av);
+		
 		xout.write(Long.toString(time) + " " + Float.toString(sensorEvent.values[0]) + "\n");
 		yout.write(Long.toString(time) + " " + Float.toString(sensorEvent.values[1]) + "\n");
 		zout.write(Long.toString(time) + " " + Float.toString(sensorEvent.values[2]) + "\n");
+		avout.write(Long.toString(time) + " " + Float.toString(av) + "\n");
 			
 		text.setText(s);
 	    }
@@ -94,23 +131,26 @@ public class Accel extends Activity implements SensorEventListener
     
     public void onStop()
     {
-	super.onStop();
-	try
-	    {
-		xout.close();
-		yout.close();
-		zout.close();
-	    }
-	catch(IOException ex)
-	    {
-	    }
+    	super.onStop();
+    	try
+    	    {
+    		xout.close();
+    		yout.close();
+    		zout.close();
+    		avout.close();
+    	    }
+    	catch(IOException ex)
+    	    {
+    	    }
     }
 
     private SensorManager sensorMgr;
     private BufferedWriter xout;
     private BufferedWriter yout;
     private BufferedWriter zout;
+    private BufferedWriter avout;
     public static long intervalInSeconds = 0;
     public static long startTime;
+    public static long timeout = 0;
     public static String runId = "";
 }
