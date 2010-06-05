@@ -1,4 +1,4 @@
-package com.data.collector;
+package com.drac.datacollector;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -21,8 +21,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.EditText;
 import android.content.*;
 import java.io.*;
+import android.os.SystemClock;
 
 public class DataCollector extends Activity
 {
@@ -31,8 +33,29 @@ public class DataCollector extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-	Intent i = new Intent();
-	i.setClassName("com.data.collector", "com.data.collector.Accel");
-	startActivity(i);
+	Button startButton = (Button)findViewById(R.id.startButton);
+	
+	startButton.setOnClickListener(new View.OnClickListener() 
+	    {
+		public void onClick(View v) 
+		{					 
+		    try
+			{
+			    EditText intervalInSecondsText = (EditText)findViewById(R.id.intervalInSecondsText);
+			    EditText runId = (EditText)findViewById(R.id.runId);
+		
+			    Accel.intervalInSeconds = Long.parseLong(intervalInSecondsText.getText().toString());
+			    Accel.runId = runId.getText().toString();
+
+			    Intent i = new Intent();
+			    i.setClassName("com.drac.datacollector", "com.drac.datacollector.Accel");
+			    startActivity(i);
+			    Accel.startTime = SystemClock.currentThreadTimeMillis();
+			}
+		    catch(NumberFormatException ex)
+			{
+			}
+		}
+	    });
     }
 }
