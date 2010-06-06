@@ -23,3 +23,5 @@ paper.dvi
 paper.aux
 paper.log
 *.autosave
+*.lof
+*.toc
