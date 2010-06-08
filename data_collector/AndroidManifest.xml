@@ -5,6 +5,7 @@
 	  android:versionName="1.0">
 
   <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.DEVICE_POWER"/>
 
   <application android:label="@string/app_name" android:icon="@drawable/icon">
     <activity android:name="DataCollector"
@@ -15,8 +16,8 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".Accel"
+    <service android:name="Accel"
 	      android:label="Accel">
-    </activity>
+    </service>
   </application>
 </manifest> 

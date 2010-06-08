@@ -54,7 +54,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Sat Jun  5 17:47:03 2010"
+@timestamp def "Sun Jun  6 19:44:43 2010"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -175,7 +175,7 @@
 @    yaxis  bar color 1
 @    yaxis  bar linestyle 1
 @    yaxis  bar linewidth 1.0
-@    yaxis  label "acceleration (m/s)"
+@    yaxis  label "acceleration (m/s^2)"
 @    yaxis  label layout para
 @    yaxis  label place auto
 @    yaxis  label char size 1.000000

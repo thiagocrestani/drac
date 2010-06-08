@@ -44,14 +44,17 @@ public class DataCollector extends Activity
 			    EditText intervalInSecondsText = (EditText)findViewById(R.id.intervalInSecondsText);
 			    EditText runId = (EditText)findViewById(R.id.runId);
 			    EditText timeoutText = (EditText)findViewById(R.id.timeoutText);
+			    EditText toleranceText = (EditText)findViewById(R.id.toleranceText);
 		
 			    Accel.intervalInSeconds = Long.parseLong(intervalInSecondsText.getText().toString());
 			    Accel.runId = runId.getText().toString();
 			    Accel.timeout = Long.parseLong(timeoutText.getText().toString());
+			    Accel.tolerance = Double.parseDouble(toleranceText.getText().toString());
 
 			    Intent i = new Intent();
 			    i.setClassName("com.drac.datacollector", "com.drac.datacollector.Accel");
-			    startActivity(i);
+			    startService(i);
+			    //startActivity(i);
 			}
 		    catch(NumberFormatException ex)
 			{
