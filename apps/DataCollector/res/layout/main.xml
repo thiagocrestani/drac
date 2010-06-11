@@ -9,7 +9,8 @@
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content"
 	    android:singleLine="true"
-	    android:text="30"/>
+	    android:text="30"
+	    />
   
   <EditText android:id="@+id/collectorId"
 	    android:layout_width="fill_parent" 
@@ -17,11 +18,16 @@
 	    android:singleLine="true"
 	    android:text="ID"
 	    />
-  <Button
-      android:id="@+id/startServiceButton"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="Start"
-      />
+  
+  <Button android:id="@+id/startServiceButton"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:text="Start"
+	  />
+
+  <TextView android:id="@+id/outputView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
 </LinearLayout>
 

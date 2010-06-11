@@ -17,6 +17,7 @@ public final class R {
     public static final class id {
         public static final int collectorId=0x7f050001;
         public static final int intervalInSecondsText=0x7f050000;
+        public static final int outputView=0x7f050003;
         public static final int startServiceButton=0x7f050002;
     }
     public static final class layout {

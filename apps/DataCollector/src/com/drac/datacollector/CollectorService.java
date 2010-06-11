@@ -45,10 +45,12 @@ public class CollectorService extends Service
 
 	accel.setStartTime(this.birth);
 	compass.setStartTime(this.birth);
+	mf.setStartTime(this.birth);
 
 	// register sensor listeners
 	accel.register(sensorManager);
 	compass.register(sensorManager);
+	mf.register(sensorManager);
 
 	// -- notifications
 	this.mNM = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
@@ -66,8 +68,10 @@ public class CollectorService extends Service
     {
 	this.sensorManager.unregisterListener(accel);
 	this.sensorManager.unregisterListener(compass);
+	this.sensorManager.unregisterListener(mf);
 	accel.onStop();
 	compass.onStop();
+	mf.onStop();
 	this.mNM.cancelAll();
     }
     
@@ -108,6 +112,7 @@ public class CollectorService extends Service
     
     // SensorEventListeners
     private Accelerometer accel = new Accelerometer();
+    private MagneticField mf = new MagneticField();
     private Compass compass = new Compass();
 
     // notifications

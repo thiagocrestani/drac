@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
+import android.widget.TextView;
 
 public class DataCollector extends Activity
 {
@@ -13,6 +14,8 @@ public class DataCollector extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+	DataCollector.output = (TextView)findViewById(R.id.outputView);
 
 	Button startServiceButton = (Button)findViewById(R.id.startServiceButton);
 	startServiceButton.setOnClickListener( new View.OnClickListener() {
@@ -37,4 +40,6 @@ public class DataCollector extends Activity
 		}
 	    });
     }
+
+    public static TextView output;
 }
