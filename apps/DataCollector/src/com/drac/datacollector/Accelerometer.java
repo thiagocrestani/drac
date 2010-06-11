@@ -24,6 +24,7 @@ public class Accelerometer extends Listener
 	this.yOut = new Output(Output.getCommonDirectory() + "y.dat");
 	this.zOut = new Output(Output.getCommonDirectory() + "z.dat");
 	this.angleOut = new Output(Output.getCommonDirectory() + "angle.dat");
+	this.angle2Out = new Output(Output.getCommonDirectory() + "angle2.dat");
 
 	this.tolerances.add(new ToleranceManager(0, Output.getCommonDirectory() + 
 						 "magwithtol_" + 0 + ".dat"));
@@ -61,12 +62,12 @@ public class Accelerometer extends Listener
 		this.zOut.write(time, z);
 
 		float mag = (float)Math.sqrt(x*x + y*y);
-		if(mag > 1.3)
-		    this.angleOut.write((long)(Math.atan(y/x)*180.0f/Math.PI), mag);
+		this.angleOut.write2((float)(Math.atan(y/x)*180.0f/Math.PI), (float)mag);
+		this.angle2Out.write2((float)mag, (float)(Math.atan(y/x)*180.0f/Math.PI));
 		
 		for(ToleranceManager t : this.tolerances)
 		    {
-			t.write(time, t.getMagnitude(z));
+			t.write(time, t.getMagnitude(this.getMagnitude(sensorEvent.values[0], sensorEvent.values[1], sensorEvent.values[2])));
 			t.updateStepCounter(time);
 		    }
 	    }
@@ -93,6 +94,8 @@ public class Accelerometer extends Listener
 	this.xOut.close();
 	this.yOut.close();
 	this.zOut.close();
+	this.angleOut.close();
+	this.angle2Out.close();
 
 	Output stepCounter = new Output(Output.getCommonDirectory() + "steps.dat");
 	
@@ -110,6 +113,7 @@ public class Accelerometer extends Listener
     private Output zOut;
 
     private Output angleOut;
+    private Output angle2Out;
     
     // The tolerance represents a threshold that the change in
     // acceleration must meet to be recorded. This should smooth our

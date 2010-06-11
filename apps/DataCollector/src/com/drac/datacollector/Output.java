@@ -27,6 +27,17 @@ public class Output
 	    {
 	    }
     }
+    
+    public void write2(float time, float value)
+    {
+	try
+	    {
+		out.write((time + " " + value + "\n").getBytes());
+	    }
+	catch(IOException ex)
+	    {
+	    }
+    }
 
     public void write(String data)
     {
