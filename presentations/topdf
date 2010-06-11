@@ -1,0 +1,5 @@
+#/bin/bash
+
+dvips $@.dvi
+ps2pdf $@.ps
+rm -f $@.ps
