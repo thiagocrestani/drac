@@ -1,0 +1,1530 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: angles.eps
+%%Creator: gnuplot 4.2 patchlevel 6 
+%%CreationDate: Sat Jun 12 14:48:38 2010
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 625 481
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following 6 true/false flags may be edited by hand if required
+% The unit line width may also be changed
+%
+/Color true def
+/Blacktext false def
+/Solid true def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Rounded false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+Level1 {} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (angles.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.2 patchlevel 6 )
+  /Author (devin)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Sat Jun 12 14:48:38 2010)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Gnuplot Prolog Version 4.2 (August 2006)
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  gsave 1 setgray fill grestore clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {show} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     show 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} bind def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get stringwidth pop add} {pop} ifelse} ifelse} forall} bind def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+end
+%%EndProlog
+gnudict begin
+gsave
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+0.500 UL
+LTb
+1475 928 M
+88 0 V
+8834 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1391 928 M
+[ [(Helvetica) 120.0 0.0 true true 0 (-100)]
+] -40.0 MRshow
+0.500 UL
+LTb
+1475 2687 M
+88 0 V
+8834 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1391 2687 M
+[ [(Helvetica) 120.0 0.0 true true 0 (-50)]
+] -40.0 MRshow
+0.500 UL
+LTb
+1475 4445 M
+88 0 V
+8834 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1391 4445 M
+[ [(Helvetica) 120.0 0.0 true true 0 (0)]
+] -40.0 MRshow
+0.500 UL
+LTb
+1475 6204 M
+88 0 V
+8834 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1391 6204 M
+[ [(Helvetica) 120.0 0.0 true true 0 (50)]
+] -40.0 MRshow
+0.500 UL
+LTb
+1475 7963 M
+88 0 V
+8834 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1391 7963 M
+[ [(Helvetica) 120.0 0.0 true true 0 (100)]
+] -40.0 MRshow
+0.500 UL
+LTb
+1475 928 M
+0 88 V
+0 6947 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 1475 788 M
+[ [(Helvetica) 120.0 0.0 true true 0 (0)]
+] -40.0 MCshow
+0.500 UL
+LTb
+3706 928 M
+0 88 V
+0 6947 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 3706 788 M
+[ [(Helvetica) 120.0 0.0 true true 0 (0.5)]
+] -40.0 MCshow
+0.500 UL
+LTb
+5936 928 M
+0 88 V
+0 6947 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 5936 788 M
+[ [(Helvetica) 120.0 0.0 true true 0 (1)]
+] -40.0 MCshow
+0.500 UL
+LTb
+8167 928 M
+0 88 V
+0 6947 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 8167 788 M
+[ [(Helvetica) 120.0 0.0 true true 0 (1.5)]
+] -40.0 MCshow
+0.500 UL
+LTb
+10397 928 M
+0 88 V
+0 6947 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 10397 788 M
+[ [(Helvetica) 120.0 0.0 true true 0 (2)]
+] -40.0 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTb
+1475 7963 N
+0 -7035 V
+8922 0 V
+0 7035 V
+-8922 0 V
+Z stroke
+0.00 0.00 0.00 C 901 4445 M
+currentpoint gsave translate 90 rotate 0 0 moveto
+[ [(Helvetica) 120.0 0.0 true true 0 (Angle \(degrees\))]
+] -40.0 MCshow
+grestore
+LTb
+0.00 0.00 0.00 C 5936 578 M
+[ [(Helvetica) 120.0 0.0 true true 0 (Acceleration \(m/s\))]
+] -40.0 MCshow
+LTb
+5936 8173 M
+[ [(Helvetica) 120.0 0.0 true true 0 (Angle Versus Acceleration while Stationary And Walking about 260 Degrees Clockwise from North)]
+] -40.0 MCshow
+1.000 UP
+0.500 UL
+LTb
+2.333 UP
+0.500 UL
+LT0
+0.00 0.00 1.00 C 2267 5629 TriUF
+2451 2992 TriUF
+1985 6606 TriUF
+2027 6345 TriUF
+1806 3855 TriUF
+2613 2773 TriUF
+1778 7032 TriUF
+2126 5820 TriUF
+2173 5346 TriUF
+2717 4031 TriUF
+2684 6738 TriUF
+2159 4097 TriUF
+1881 3245 TriUF
+2170 3995 TriUF
+2151 2146 TriUF
+2640 5960 TriUF
+2286 3049 TriUF
+1751 7397 TriUF
+1881 6134 TriUF
+1852 6096 TriUF
+2308 5533 TriUF
+1946 5350 TriUF
+2464 7480 TriUF
+2359 6626 TriUF
+2355 4648 TriUF
+1728 1294 TriUF
+2008 5347 TriUF
+1692 5278 TriUF
+1994 7505 TriUF
+1787 4685 TriUF
+1898 3777 TriUF
+2051 7549 TriUF
+1948 7044 TriUF
+2046 3095 TriUF
+1785 4759 TriUF
+1988 6642 TriUF
+2075 5534 TriUF
+1714 6092 TriUF
+1723 5431 TriUF
+1990 1931 TriUF
+1867 3567 TriUF
+1672 5266 TriUF
+1762 6915 TriUF
+1583 5011 TriUF
+1838 4490 TriUF
+1654 2123 TriUF
+1838 6687 TriUF
+1657 5669 TriUF
+2155 5240 TriUF
+1810 5177 TriUF
+2564 1321 TriUF
+1854 2213 TriUF
+2116 7266 TriUF
+1776 6104 TriUF
+1758 5682 TriUF
+1948 1711 TriUF
+1755 6375 TriUF
+3066 2342 TriUF
+2795 2184 TriUF
+2249 1886 TriUF
+1736 3671 TriUF
+2564 3159 TriUF
+2056 2920 TriUF
+2053 2899 TriUF
+2550 3439 TriUF
+2318 3744 TriUF
+1978 6158 TriUF
+2317 2586 TriUF
+1769 3252 TriUF
+2095 1602 TriUF
+1971 2536 TriUF
+1946 7232 TriUF
+2444 2812 TriUF
+3649 2759 TriUF
+3739 2475 TriUF
+2658 2766 TriUF
+2958 2389 TriUF
+2770 6685 TriUF
+2766 1681 TriUF
+2990 4770 TriUF
+2748 1290 TriUF
+1945 3006 TriUF
+3097 2262 TriUF
+2468 2444 TriUF
+4309 3130 TriUF
+2685 5766 TriUF
+2483 4377 TriUF
+1835 2292 TriUF
+2199 2202 TriUF
+1907 3484 TriUF
+2983 2122 TriUF
+3958 1670 TriUF
+3145 7255 TriUF
+4960 2779 TriUF
+6675 3092 TriUF
+3272 4686 TriUF
+2818 2815 TriUF
+2317 7552 TriUF
+2965 1967 TriUF
+3472 2594 TriUF
+3611 3499 TriUF
+1853 3273 TriUF
+3935 2035 TriUF
+3165 2227 TriUF
+3399 2799 TriUF
+4056 2683 TriUF
+3386 2716 TriUF
+1728 5407 TriUF
+1685 1526 TriUF
+1815 5755 TriUF
+1680 1690 TriUF
+2278 2109 TriUF
+2895 6302 TriUF
+2587 4415 TriUF
+4049 3132 TriUF
+1943 1601 TriUF
+5144 3242 TriUF
+5054 3419 TriUF
+2469 3813 TriUF
+3654 3740 TriUF
+2701 2645 TriUF
+3762 2168 TriUF
+3272 3776 TriUF
+3837 2239 TriUF
+2099 4285 TriUF
+3281 2243 TriUF
+2556 4018 TriUF
+1913 1338 TriUF
+1939 5887 TriUF
+3018 3782 TriUF
+2584 3331 TriUF
+3685 2965 TriUF
+4428 3349 TriUF
+2762 5724 TriUF
+2606 5661 TriUF
+3170 3020 TriUF
+4210 2595 TriUF
+2739 1560 TriUF
+3775 3150 TriUF
+5342 2874 TriUF
+3480 7260 TriUF
+4363 1762 TriUF
+3174 1484 TriUF
+3864 1552 TriUF
+3184 7501 TriUF
+2433 1294 TriUF
+1799 1415 TriUF
+1766 5638 TriUF
+2903 6243 TriUF
+2960 3619 TriUF
+3200 2454 TriUF
+1703 6388 TriUF
+2215 1942 TriUF
+3812 2657 TriUF
+3614 2115 TriUF
+2669 2674 TriUF
+3328 2244 TriUF
+4817 3113 TriUF
+3017 4564 TriUF
+2841 2813 TriUF
+3078 3482 TriUF
+2604 2162 TriUF
+1703 3164 TriUF
+3891 4493 TriUF
+3221 4029 TriUF
+4028 4867 TriUF
+2809 5020 TriUF
+3744 2010 TriUF
+3513 3036 TriUF
+3439 4724 TriUF
+5166 3692 TriUF
+2908 6340 TriUF
+4843 3547 TriUF
+2902 2265 TriUF
+5754 3419 TriUF
+7664 5515 TriUF
+9343 4571 TriUF
+5556 5141 TriUF
+4543 4428 TriUF
+2422 2875 TriUF
+3561 3531 TriUF
+1790 2012 TriUF
+3446 4059 TriUF
+2497 5719 TriUF
+2499 3465 TriUF
+2233 1514 TriUF
+2295 3061 TriUF
+2268 2249 TriUF
+2181 4855 TriUF
+2840 4257 TriUF
+1838 5810 TriUF
+2022 4031 TriUF
+2117 6279 TriUF
+1988 6378 TriUF
+6616 3283 TriUF
+7336 3986 TriUF
+4622 7193 TriUF
+5111 3409 TriUF
+6528 2378 TriUF
+3338 4548 TriUF
+2850 3868 TriUF
+1655 3893 TriUF
+2995 3951 TriUF
+1607 3114 TriUF
+3396 3437 TriUF
+3488 1689 TriUF
+2726 4179 TriUF
+3624 4490 TriUF
+3703 5016 TriUF
+2503 4765 TriUF
+2491 1443 TriUF
+3503 6516 TriUF
+6125 4037 TriUF
+1775 6635 TriUF
+2845 5459 TriUF
+4710 4618 TriUF
+2827 7440 TriUF
+4681 3136 TriUF
+4217 3412 TriUF
+2370 3189 TriUF
+2811 5212 TriUF
+3549 5385 TriUF
+3376 5021 TriUF
+2414 5083 TriUF
+2022 1894 TriUF
+2145 5317 TriUF
+2799 5029 TriUF
+1955 2279 TriUF
+2814 4871 TriUF
+3025 4591 TriUF
+2730 2908 TriUF
+2395 4545 TriUF
+2588 3280 TriUF
+4005 1501 TriUF
+5273 2140 TriUF
+3763 4334 TriUF
+4464 6179 TriUF
+4961 1384 TriUF
+4435 4019 TriUF
+3524 3052 TriUF
+2713 6871 TriUF
+6066 4308 TriUF
+5119 4216 TriUF
+2168 1718 TriUF
+2817 2856 TriUF
+3656 2712 TriUF
+3387 2130 TriUF
+3143 4376 TriUF
+5309 3410 TriUF
+2456 6376 TriUF
+4042 4019 TriUF
+4367 4117 TriUF
+2619 3549 TriUF
+4045 3890 TriUF
+3728 4550 TriUF
+6509 4411 TriUF
+2727 3569 TriUF
+6177 4082 TriUF
+6428 3313 TriUF
+3094 6853 TriUF
+1821 3931 TriUF
+4509 3233 TriUF
+1576 3901 TriUF
+3222 3326 TriUF
+2525 1878 TriUF
+1613 2182 TriUF
+2355 2527 TriUF
+2294 4306 TriUF
+3052 5995 TriUF
+2378 4587 TriUF
+1579 1903 TriUF
+2438 4612 TriUF
+3574 3178 TriUF
+2167 7551 TriUF
+2822 1757 TriUF
+7042 2543 TriUF
+4149 3111 TriUF
+4967 2009 TriUF
+3627 2346 TriUF
+2795 2421 TriUF
+1983 1521 TriUF
+3286 2424 TriUF
+3775 2915 TriUF
+2465 5663 TriUF
+2049 1516 TriUF
+1531 3679 TriUF
+2539 4840 TriUF
+2255 5599 TriUF
+2632 2789 TriUF
+2650 3018 TriUF
+2183 4865 TriUF
+4464 2855 TriUF
+3256 6186 TriUF
+5677 3351 TriUF
+4611 3495 TriUF
+7105 3383 TriUF
+4395 2402 TriUF
+5641 2010 TriUF
+5724 2211 TriUF
+4043 3070 TriUF
+4889 3008 TriUF
+2197 4142 TriUF
+1657 4712 TriUF
+1843 4223 TriUF
+4156 2036 TriUF
+3204 4440 TriUF
+3994 2399 TriUF
+3433 2825 TriUF
+2349 4721 TriUF
+3789 3287 TriUF
+4134 2448 TriUF
+5712 2806 TriUF
+4237 4655 TriUF
+3705 6276 TriUF
+6355 2481 TriUF
+3735 5229 TriUF
+3356 4634 TriUF
+3821 3634 TriUF
+5803 2780 TriUF
+2156 4390 TriUF
+3697 2285 TriUF
+2227 2256 TriUF
+1789 2415 TriUF
+2138 5554 TriUF
+3174 3541 TriUF
+3038 2162 TriUF
+2734 3159 TriUF
+3121 3431 TriUF
+4573 2760 TriUF
+2079 7591 TriUF
+4385 4141 TriUF
+5255 3500 TriUF
+5687 2916 TriUF
+3883 3935 TriUF
+4774 3164 TriUF
+2560 2887 TriUF
+2139 3828 TriUF
+3239 2478 TriUF
+2941 3415 TriUF
+3777 2965 TriUF
+1692 3765 TriUF
+2215 7443 TriUF
+2875 1670 TriUF
+2273 1379 TriUF
+2760 2785 TriUF
+1918 2182 TriUF
+3028 1682 TriUF
+4058 3029 TriUF
+2177 1417 TriUF
+6690 2846 TriUF
+2762 4292 TriUF
+5435 2919 TriUF
+1973 1376 TriUF
+5293 3067 TriUF
+1852 1491 TriUF
+3491 4249 TriUF
+5107 3730 TriUF
+3008 3760 TriUF
+3558 2644 TriUF
+4084 2533 TriUF
+3260 7300 TriUF
+2437 4734 TriUF
+4579 3325 TriUF
+3225 1927 TriUF
+3081 5662 TriUF
+4958 3684 TriUF
+2113 5570 TriUF
+3601 4626 TriUF
+6605 3872 TriUF
+2110 3168 TriUF
+6668 3953 TriUF
+4990 3057 TriUF
+4340 3872 TriUF
+5716 2926 TriUF
+2649 7372 TriUF
+5634 4653 TriUF
+4593 3688 TriUF
+1720 1844 TriUF
+2182 5137 TriUF
+2217 4653 TriUF
+2147 2104 TriUF
+2986 4232 TriUF
+3909 3182 TriUF
+2275 2878 TriUF
+3205 3790 TriUF
+3719 3777 TriUF
+2458 2664 TriUF
+4673 2811 TriUF
+5287 3480 TriUF
+5131 2869 TriUF
+2454 2780 TriUF
+7881 2855 TriUF
+3963 3649 TriUF
+2830 4920 TriUF
+5522 4191 TriUF
+4766 4445 TriUF
+2951 3872 TriUF
+1994 2810 TriUF
+2455 3333 TriUF
+2727 3104 TriUF
+3567 2687 TriUF
+2353 4371 TriUF
+3549 2890 TriUF
+3337 3029 TriUF
+2662 3368 TriUF
+4863 3322 TriUF
+3516 5531 TriUF
+3818 5230 TriUF
+2423 6446 TriUF
+4928 3639 TriUF
+3871 3932 TriUF
+4726 2871 TriUF
+4706 3800 TriUF
+1741 3586 TriUF
+4305 4536 TriUF
+6584 4451 TriUF
+3332 1917 TriUF
+4705 3873 TriUF
+5514 2955 TriUF
+2908 1386 TriUF
+4925 4033 TriUF
+3805 2986 TriUF
+1720 6456 TriUF
+3064 4027 TriUF
+2995 3078 TriUF
+1965 7314 TriUF
+7082 3499 TriUF
+7916 3627 TriUF
+2725 4669 TriUF
+6054 4140 TriUF
+4387 4391 TriUF
+3075 5526 TriUF
+2951 5458 TriUF
+2936 5730 TriUF
+4008 5075 TriUF
+3324 4898 TriUF
+1874 3391 TriUF
+2475 4379 TriUF
+2433 2809 TriUF
+2882 1480 TriUF
+2255 4935 TriUF
+2106 3507 TriUF
+3078 2278 TriUF
+3093 4299 TriUF
+2150 6968 TriUF
+6771 4587 TriUF
+5396 4079 TriUF
+7145 4670 TriUF
+5869 3337 TriUF
+9613 3293 TriUF
+2667 6669 TriUF
+4587 3976 TriUF
+6838 4307 TriUF
+2113 4980 TriUF
+3334 2878 TriUF
+3586 3137 TriUF
+2257 3096 TriUF
+3475 3694 TriUF
+4165 3210 TriUF
+2161 7167 TriUF
+2503 2412 TriUF
+2934 2908 TriUF
+2118 2918 TriUF
+4034 4209 TriUF
+9080 3531 TriUF
+3705 4428 TriUF
+5853 2777 TriUF
+3763 3624 TriUF
+7138 2555 TriUF
+2306 3657 TriUF
+2631 3618 TriUF
+2567 4631 TriUF
+5237 4310 TriUF
+2347 2959 TriUF
+1998 6694 TriUF
+2909 2477 TriUF
+4555 2729 TriUF
+1751 4570 TriUF
+3582 4070 TriUF
+3107 3542 TriUF
+2856 2063 TriUF
+2680 4289 TriUF
+4127 3714 TriUF
+2446 6538 TriUF
+4966 4784 TriUF
+5436 4232 TriUF
+2254 7183 TriUF
+8873 4097 TriUF
+1806 3419 TriUF
+6264 3805 TriUF
+4818 3446 TriUF
+3893 4047 TriUF
+6334 4213 TriUF
+3430 3614 TriUF
+2531 2035 TriUF
+2492 3673 TriUF
+3519 2382 TriUF
+4392 5251 TriUF
+3410 3817 TriUF
+3299 5366 TriUF
+2789 5606 TriUF
+8978 3371 TriUF
+4307 2191 TriUF
+8451 3325 TriUF
+2869 2861 TriUF
+5819 3292 TriUF
+1962 6037 TriUF
+2687 4392 TriUF
+5287 3623 TriUF
+1873 6112 TriUF
+1911 5334 TriUF
+2880 5585 TriUF
+3939 2538 TriUF
+2130 2866 TriUF
+4757 2582 TriUF
+2617 5848 TriUF
+5293 3148 TriUF
+3006 1429 TriUF
+5343 3278 TriUF
+5944 2644 TriUF
+7940 3288 TriUF
+4742 2073 TriUF
+4035 2797 TriUF
+5380 2908 TriUF
+3257 3078 TriUF
+4487 2984 TriUF
+4984 3101 TriUF
+1981 2369 TriUF
+1677 5800 TriUF
+1860 1420 TriUF
+2187 4081 TriUF
+2224 4206 TriUF
+2283 4678 TriUF
+2124 7105 TriUF
+2493 2366 TriUF
+2612 2462 TriUF
+1977 5363 TriUF
+5334 2743 TriUF
+5563 2732 TriUF
+4268 3420 TriUF
+4979 2165 TriUF
+7461 2599 TriUF
+2197 5747 TriUF
+2972 3194 TriUF
+3667 3601 TriUF
+3990 3769 TriUF
+2190 7159 TriUF
+2721 2144 TriUF
+2310 2298 TriUF
+2682 2219 TriUF
+2163 4609 TriUF
+2862 2273 TriUF
+2742 2483 TriUF
+2755 3061 TriUF
+3241 2203 TriUF
+1916 5259 TriUF
+5903 4177 TriUF
+5870 3825 TriUF
+2215 6498 TriUF
+6982 3190 TriUF
+3140 3686 TriUF
+6318 2808 TriUF
+6910 3399 TriUF
+2197 6912 TriUF
+5915 3699 TriUF
+6117 3734 TriUF
+3629 3356 TriUF
+1996 1359 TriUF
+3662 1893 TriUF
+3585 2318 TriUF
+2230 2544 TriUF
+2635 2891 TriUF
+2774 1783 TriUF
+2728 2549 TriUF
+3662 2448 TriUF
+2955 2908 TriUF
+8301 3327 TriUF
+5535 4120 TriUF
+5348 4075 TriUF
+4398 2845 TriUF
+3509 6633 TriUF
+3803 3798 TriUF
+3816 3257 TriUF
+3721 2738 TriUF
+1840 5995 TriUF
+3716 2104 TriUF
+3181 2283 TriUF
+2232 2202 TriUF
+1904 4772 TriUF
+2766 3509 TriUF
+2878 3224 TriUF
+1781 1753 TriUF
+2604 4317 TriUF
+4081 3691 TriUF
+2545 4840 TriUF
+4354 3587 TriUF
+5050 4762 TriUF
+6481 4860 TriUF
+2642 2514 TriUF
+5276 4191 TriUF
+3402 4713 TriUF
+3465 3175 TriUF
+4700 3728 TriUF
+3358 3900 TriUF
+3196 3740 TriUF
+4911 4331 TriUF
+2914 5131 TriUF
+1919 1769 TriUF
+2242 3540 TriUF
+2481 2084 TriUF
+1991 5394 TriUF
+2842 3652 TriUF
+2820 2983 TriUF
+1991 3983 TriUF
+2584 3459 TriUF
+2433 3224 TriUF
+2399 2392 TriUF
+8523 3594 TriUF
+2885 4608 TriUF
+6671 3800 TriUF
+5670 3501 TriUF
+3909 3993 TriUF
+4877 4214 TriUF
+2112 4143 TriUF
+3951 4564 TriUF
+3641 4366 TriUF
+2251 5389 TriUF
+3125 2885 TriUF
+3439 3011 TriUF
+1811 4676 TriUF
+2676 4395 TriUF
+2106 3293 TriUF
+1879 2755 TriUF
+2297 4417 TriUF
+2696 4756 TriUF
+2784 5129 TriUF
+2538 4601 TriUF
+6581 4337 TriUF
+3364 4297 TriUF
+3949 4157 TriUF
+4184 3057 TriUF
+2779 6855 TriUF
+2489 5430 TriUF
+2709 2737 TriUF
+2022 4379 TriUF
+2244 7265 TriUF
+2946 5974 TriUF
+2876 3523 TriUF
+1819 3081 TriUF
+3330 3595 TriUF
+2572 4769 TriUF
+1741 1986 TriUF
+3814 4658 TriUF
+2566 5635 TriUF
+2053 3102 TriUF
+1615 4702 TriUF
+2526 2626 TriUF
+2385 6389 TriUF
+1821 5251 TriUF
+2635 3962 TriUF
+2334 2908 TriUF
+2255 5196 TriUF
+2529 4955 TriUF
+2107 5108 TriUF
+1969 1497 TriUF
+1738 5474 TriUF
+1923 3985 TriUF
+2256 2126 TriUF
+1702 4678 TriUF
+1853 2181 TriUF
+1748 6103 TriUF
+1766 3211 TriUF
+1829 2480 TriUF
+1520 4855 TriUF
+1980 4589 TriUF
+1829 2405 TriUF
+1822 3737 TriUF
+1714 5586 TriUF
+1732 6088 TriUF
+1656 4548 TriUF
+1780 7540 TriUF
+1839 2510 TriUF
+1749 5881 TriUF
+1748 2960 TriUF
+1747 2987 TriUF
+1677 4518 TriUF
+2077 2287 TriUF
+1633 4522 TriUF
+1980 7138 TriUF
+1869 2673 TriUF
+1850 1727 TriUF
+1678 4564 TriUF
+1822 4518 TriUF
+2047 5155 TriUF
+1836 4314 TriUF
+1801 4386 TriUF
+1703 4478 TriUF
+2842 2328 TriUF
+1897 2347 TriUF
+1631 4573 TriUF
+1500 4254 TriUF
+2174 1716 TriUF
+1840 1308 TriUF
+1631 4410 TriUF
+1840 1552 TriUF
+2154 2811 TriUF
+1528 4237 TriUF
+1906 3849 TriUF
+1636 4486 TriUF
+2029 7526 TriUF
+2240 5904 TriUF
+1768 3032 TriUF
+1787 7126 TriUF
+1855 5369 TriUF
+1982 4431 TriUF
+1800 4587 TriUF
+1917 3692 TriUF
+1862 4511 TriUF
+1790 3228 TriUF
+1657 1395 TriUF
+1731 6155 TriUF
+1655 4587 TriUF
+1655 4584 TriUF
+1559 4541 TriUF
+1655 4626 TriUF
+2078 3300 TriUF
+1877 3563 TriUF
+1788 3281 TriUF
+1501 4477 TriUF
+1684 2362 TriUF
+1905 4583 TriUF
+1826 5590 TriUF
+1704 3452 TriUF
+1717 5635 TriUF
+1660 1868 TriUF
+1521 4610 TriUF
+1682 4570 TriUF
+1732 2954 TriUF
+1697 2603 TriUF
+1731 6198 TriUF
+1655 4556 TriUF
+1494 4668 TriUF
+1603 2150 TriUF
+2015 4552 TriUF
+1829 2550 TriUF
+1663 2017 TriUF
+1682 4607 TriUF
+1667 2151 TriUF
+1521 4591 TriUF
+1610 4498 TriUF
+1744 3064 TriUF
+1831 5257 TriUF
+1597 1299 TriUF
+1857 2629 TriUF
+1655 4483 TriUF
+2173 1980 TriUF
+2147 4047 TriUF
+1657 1557 TriUF
+2042 4711 TriUF
+1731 5557 TriUF
+1657 1355 TriUF
+1775 4514 TriUF
+1972 3316 TriUF
+1711 6342 TriUF
+1788 3342 TriUF
+1601 4554 TriUF
+1830 3854 TriUF
+1597 1440 TriUF
+1778 1591 TriUF
+1682 4600 TriUF
+1836 4581 TriUF
+2161 5192 TriUF
+1539 4350 TriUF
+1731 6157 TriUF
+1732 2984 TriUF
+1676 5837 TriUF
+1818 6751 TriUF
+1947 6353 TriUF
+1658 2015 TriUF
+1707 6326 TriUF
+1839 7377 TriUF
+2154 2768 TriUF
+1901 3774 TriUF
+1879 6226 TriUF
+1827 5265 TriUF
+1714 3511 TriUF
+1628 6785 TriUF
+1859 6553 TriUF
+1531 5078 TriUF
+1653 1737 TriUF
+1835 4550 TriUF
+1669 6610 TriUF
+1836 4553 TriUF
+1501 5079 TriUF
+2006 7468 TriUF
+1825 2333 TriUF
+1833 1639 TriUF
+1880 3720 TriUF
+1732 3120 TriUF
+1839 1527 TriUF
+1914 4535 TriUF
+1719 2792 TriUF
+1880 3658 TriUF
+1707 4782 TriUF
+1887 2581 TriUF
+1720 2911 TriUF
+1879 5646 TriUF
+1880 3743 TriUF
+1880 3659 TriUF
+1778 1501 TriUF
+1974 7204 TriUF
+1651 1793 TriUF
+1731 6267 TriUF
+1700 4714 TriUF
+1610 4375 TriUF
+1655 4551 TriUF
+1764 3306 TriUF
+1502 5275 TriUF
+1889 4708 TriUF
+1501 5336 TriUF
+2017 4697 TriUF
+1844 7110 TriUF
+1862 4687 TriUF
+1677 7352 TriUF
+1654 2295 TriUF
+1800 3392 TriUF
+1800 4753 TriUF
+1708 6407 TriUF
+1752 4635 TriUF
+1633 4600 TriUF
+1596 4712 TriUF
+1650 2110 TriUF
+1829 1764 TriUF
+1648 2661 TriUF
+1632 4591 TriUF
+1732 3015 TriUF
+2017 4690 TriUF
+1823 5589 TriUF
+1836 4641 TriUF
+1862 7023 TriUF
+1746 3205 TriUF
+1760 3361 TriUF
+1990 3063 TriUF
+1677 7246 TriUF
+1836 4631 TriUF
+2094 4029 TriUF
+1680 4727 TriUF
+1892 2655 TriUF
+1886 4623 TriUF
+1708 6282 TriUF
+1863 4591 TriUF
+1681 4670 TriUF
+1656 4668 TriUF
+1761 3324 TriUF
+1889 2450 TriUF
+1651 1714 TriUF
+1826 5570 TriUF
+1746 3159 TriUF
+1706 6288 TriUF
+1.000 UP
+0.500 UL
+LTb
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
